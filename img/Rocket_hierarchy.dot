@@ -1,0 +1,135 @@
+digraph Rocket_hierarchy { rankdir="TB" 
+ node [shape="rectangle"]; 
+rankdir="LR" 
+stylesheet = "styles.css"
+module_1 [shape= "plaintext" href="Rocket.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > Rocket </TD>
+  </TR>
+        
+  <TR>
+    <TD PORT="module_6" BGCOLOR="#FFF8DC" >alu</TD>
+  </TR>
+        
+  <TR>
+    <TD PORT="module_2" BGCOLOR="#FFF8DC" >bpu</TD>
+  </TR>
+        
+  <TR>
+    <TD PORT="module_9" BGCOLOR="#FFF8DC" >csr</TD>
+  </TR>
+        
+  <TR>
+    <TD PORT="module_4" BGCOLOR="#FFF8DC" >ibuf</TD>
+  </TR>
+        
+  <TR>
+    <TD PORT="module_3" BGCOLOR="#FFF8DC" >div</TD>
+  </TR>
+        
+  <TR>
+    <TD PORT="module_7" BGCOLOR="#FFF8DC" >PlusArgTimeout</TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_2 [shape= "plaintext" href="BreakpointUnit.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > BreakpointUnit </TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_3 [shape= "plaintext" href="MulDiv.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > MulDiv </TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_4 [shape= "plaintext" href="IBuf.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > IBuf </TD>
+  </TR>
+        
+  <TR>
+    <TD PORT="module_5" BGCOLOR="#FFF8DC" >exp</TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_5 [shape= "plaintext" href="RVCExpander.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > RVCExpander </TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_6 [shape= "plaintext" href="ALU.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > ALU </TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_7 [shape= "plaintext" href="PlusArgTimeout.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > PlusArgTimeout </TD>
+  </TR>
+        
+  <TR>
+    <TD PORT="module_8" BGCOLOR="#FFF8DC" >plusarg_reader</TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_8 [shape= "plaintext" href="plusarg_reader_50.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > plusarg_reader_50 </TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_9 [shape= "plaintext" href="CSRFile.dot.svg" label=<
+
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+      
+  <TR >
+    <TD BGCOLOR="#FFDEAD" > CSRFile </TD>
+  </TR>
+        
+</TABLE>>];
+
+      module_1:module_2 -> module_2
+module_1:module_3 -> module_3
+module_4:module_5 -> module_5
+module_1:module_4 -> module_4
+module_1:module_6 -> module_6
+module_7:module_8 -> module_8
+module_1:module_7 -> module_7
+module_1:module_9 -> module_9
+}
