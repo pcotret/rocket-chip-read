@@ -2,4 +2,5 @@ Trying to document the Rocket chip core, updating the wonderful https://github.c
 
 ![img](img/Rocket_hierarchy.dot.svg)
 
+## Rocket documentation
 - [Rocket core](rocket)
